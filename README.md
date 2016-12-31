@@ -40,4 +40,4 @@ License
 
 The MIT License
 
-Copyright (c) 2016 Rand Scullard
+Copyright (c) 2017 Med Zarroug
