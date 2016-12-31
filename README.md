@@ -8,7 +8,7 @@ This is a minimal Electron application based on the [Quick Start Guide](http://e
 
 ## Screenshot
 
-![screenshot.jpg](img/screenshot.jpg)
+![screenshot.JPG](img/screenshot.JPG)
 
 ## To Use
 
