@@ -32,7 +32,7 @@ Learn more about Electron and its API in the [documentation](http://electron.ato
 ## Other Example Apps
 
 For more example apps, see the
-[list of boilerplates](http://electron.atom.io/community/#boilerplates)
+[list of boilerplates](http://electron.atom.io/apps/)
 created by the awesome electron community.
 
 License
