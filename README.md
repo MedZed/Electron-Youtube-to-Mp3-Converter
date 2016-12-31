@@ -4,7 +4,6 @@
 
 **Clone and run for a quick way to see Electron-Youtube-to-Mp3-Converter in action.**
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/latest/tutorial/quick-start) within the Electron documentation.
 
 ## Screenshot
 
