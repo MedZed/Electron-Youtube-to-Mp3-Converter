@@ -1,6 +1,6 @@
 # Electron-Youtube-to-Mp3-Converter
 
-![icon.png](img/icon.ico)
+![icon.ico](img/icon.ico)
 
 **Clone and run for a quick way to see Electron-Youtube-to-Mp3-Converter in action.**
 
