@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Touby</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	<script>window.$ = window.jQuery = require('jquery');</script>
+	<!-- <script>
+		window.$ = window.jQuery = require('./jQuery.js');
+	</script> -->
+	<script>
+
+		function ajax_get_json(id) {
+			var yt = id;
+
+			var results = document.getElementById("results");
+			$.getJSON('http://www.yt-mp3.com/fetch?v=' + id + '&apikey=1234567', function(yt_data) {
+				if (yt_data.status == 'error') {
+					results.innerHTML = "<p style='top: 40vh;' id='Down' >"+yt_data.message+"</p>";
+					return false;
+				}
+				// if(yt_data.status!=='ok'){ajax_get_json(id);}
+				if (yt_data.status == 'timeout') {
+					ajax_get_json(id);
+					results.innerHTML = "<p style='top: 40vh;' id='Down' >Video is in a queue, please wait "+yt_data.timeout+" <img style='line-hight:20px;' src='img/loader.gif' width='13px' height='13px' /></p>";
+				} else {
+					// results.innerHTML = "";
+					try {
+
+								if(yt_data.url!==undefined){
+									results.innerHTML = "<div id='loader'></div><p id='Down'>" + yt_data.title+ "<br><br> <a  href=http:" + yt_data.url + "> Download </a> <br> </p>";
+									$("#results").css("background-image", "url(" + yt_data.thumbnail + ")");
+									dReady();
+								}else{
+									$("#results").css("background-image", "url(" + yt_data.thumbnail + ")");
+									ajax_get_json(id)
+								}
+
+
+					} catch (e) {
+						alert("Error, Please restart the application");
+					}
+
+				}
+
+
+
+
+			});
+
+
+			// results.innerHTML = "";
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<div class="titlebar">
+<audio id="myAudio">
+  <source src="audio/s.mp3" type="audio/mpeg">
+</audio>
+		<div class="buttons">
+			<div title="close" class="close" id='close-btn'>
+				<a class="closebutton" href="#"><span><strong></strong></span></a>
+				<!-- close button link -->
+			</div>
+			<div title="minimize" class="minimize" id="min-btn">
+				<a class="minimizebutton" href="#"><span><strong></strong></span></a>
+				<!-- minimize button link -->
+			</div>
+			<div title="This app was mad by MEDZED" class="zoom">
+				<a class="zoombutton" href="#"><span><strong></strong></span></a>
+				<!-- zoom button link -->
+			</div>
+		</div>
+		<input type="text" class="textfield" name="url" onpaste="var e=this; setTimeout(function(){return runScript_paste(e.value);}, 4);" value="https://youtu.be/qdsTUfDTEhQ" id="url" onkeypress="return runScript(event)">
+	</div>
+
+	</div>
+
+
+	<div id="results">
+		<div id="help">
+			Past a valid Youtube link in the textfield.
+		</div>
+	</div>
+
+
+	<script>
+	var url = document.getElementById("url").value;
+
+	function runScript(e) {
+		if (e.keyCode == 13) {
+			url = document.getElementById("url").value;
+			validateUrl(url);
+		}
+	}
+
+	function runScript_paste(url) {
+		validateUrl(url);
+	}
+
+	function validateUrl(url) {
+			var videoid = url.match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/);
+			if (videoid != null) {
+				ajax_get_json(videoid[1]);
+			} else {
+				$("input").css('background-color', 'rgba(200,20,0,0.3)');
+			}
+	}
+</script>
+
+<script src="./js/noDragAndDrop.js"></script>
+<script src="js/buttons.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/downloadReady.js"></script>
+
+<script>
+		$(document).ready(function() {
+	if( $('#results:empty').length ) {alert("Error");}
+
+			$('#url').focus();
+			var url = document.getElementById("url").value;
+			validateUrl(url);
+		});
+
+
+		function playAudio() {
+			var x = document.getElementById("myAudio");
+			x.play();
+		}
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+#results {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-user-select: none;
+    cursor: default;
+    /*opacity: 0.9;*/
+    font-family: 'Lato', sans-serif;
+    /*font-style: italic;*/
+    -webkit-app-region: drag;
+    /*filter: grayscale(20%);*/
+
+}
+
+#loader {
+    position: absolute;
+    top: 39px;
+    width: 0px;
+    bottom: 9.5vh;
+    background-color: rgba(155, 89, 182, 0.3);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#help {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40vh;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30vh;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+@charset "UTF-8";
+
+/* ©2015 Johannes Jakob
+   Made with <3 in Germany */
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #000;
+    font-family: HelveticaNeue, 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* window BEGIN */
+
+#Down a {
+    text-decoration: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: rgba(231, 76, 60, 1);
+    padding: 3px 5px;
+    -webkit-app-region: no-drag;
+    font-family: helvetica;
+    font-style: normal;
+}
+
+#Down a:hover {
+    background-color: rgba(231, 76, 60, 0.7);
+}
+
+#Down a:active {
+    background-color: rgba(231, 76, 60, 0.5);
+}
+
+span {
+    line-height: 9px;
+    vertical-align: 50%;
+}
+
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e1dfe1, color-stop(1, #d5d3d5)));
+    background: -webkit-linear-gradient(top, #e1dfe1, #d5d3d5);
+    background: linear-gradient(top, #e1dfe1, #d5d3d5);
+    color: #4d494d;
+    font-size: 11pt;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    height: 37px;
+    border-top: 1px solid #f2f1f2;
+    border-bottom: 1px solid #b5b3b5;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.buttons {
+    padding-left: 8px;
+    padding-top: 11px;
+    float: left;
+    line-height: 0px;
+    -webkit-app-region: no-drag;
+}
+
+.buttons:hover a {
+    visibility: visible;
+}
+
+.close {
+    background: #ff5c5c;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e33e41;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.close:hover {
+    background: #c14645;
+    cursor: pointer;
+}
+
+.minimize {
+    background: #ffbd4c;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 4px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e09e3e;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.minimize:active {}
+
+.minimize:hover {
+    background: #c08e38;
+    cursor: pointer;
+}
+
+.zoom {
+    background: #00ca56;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #14ae46;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.zoom:hover {
+    background: #029740;
+    cursor: help;
+}
+
+.textfield {
+    -webkit-app-region: no-drag;
+    font-size: 10pt;
+    text-align: center;
+    width: 50%;
+    height: 20px;
+    margin-top: 7px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #c1c0c1;
+    border-radius: 4px;
+    cursor: default;
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+    color: transparent;
+}
