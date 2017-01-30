@@ -1,13 +1,18 @@
-# Electron-Youtube-to-Mp3-Converter
+# electron-quick-start
 
-![icon.png](img/ytb-icon.png)
+**Clone and run for a quick way to see Electron in action.**
 
-**Clone and run for a quick way to see Electron-Youtube-to-Mp3-Converter in action.**
+This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
+**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
 
-## Screenshot
+A basic Electron application needs just these files:
 
-![screenshot.JPG](img/screenshot.JPG)
+- `package.json` - Points to the app's main file and lists its details and dependencies.
+- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
+- `index.html` - A web page to render. This is the app's **renderer process**.
+
+You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
 ## To Use
 
@@ -15,7 +20,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter.git
+git clone https://github.com/electron/electron-quick-start
 # Go into the repository
 cd electron-quick-start
 # Install dependencies
@@ -24,20 +29,12 @@ npm install
 npm start
 ```
 
-Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
-
-## Link to final installable windows app
-[Electron Youtube To MP3 Converter](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fih85t8hj629ag5g%2FYtb-mp3.rar%3Fdl%3D0&h=KAQFlnymx&s=1)
+Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/).
 
 ## Other Example Apps
 
 For more example apps, see the
-[list of boilerplates](http://electron.atom.io/apps/)
+[list of boilerplates](http://electron.atom.io/community/#boilerplates)
 created by the awesome electron community.
 
-License
--------
-
-The MIT License
-
-Copyright (c) 2017 Med Zarroug
+#### License [CC0 1.0 (Public Domain)](LICENSE.md)

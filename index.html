@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Touby</title>
+	<title>Youtube-mp3</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="style/style.css">
 	<script>window.$ = window.jQuery = require('jquery');</script>
@@ -15,7 +15,7 @@
 			var yt = id;
 
 			var results = document.getElementById("results");
-			$.getJSON('http://www.yt-mp3.com/fetch?v=' + id + '&apikey=1234567', function(yt_data) {
+			$.getJSON('http://www.yt-mp3.com/fetch?v=' + id + '&apikey=2298ce13e9f02164f2fec68daab4af8f', function(yt_data) {
 				if (yt_data.status == 'error') {
 					results.innerHTML = "<p style='top: 40vh;' id='Down' >"+yt_data.message+"</p>";
 					return false;
@@ -76,7 +76,7 @@
 				<!-- zoom button link -->
 			</div>
 		</div>
-		<input type="text" class="textfield" name="url" onpaste="var e=this; setTimeout(function(){return runScript_paste(e.value);}, 4);" value="https://youtu.be/qdsTUfDTEhQ" id="url" onkeypress="return runScript(event)">
+		<input type="text" class="textfield" name="url" onpaste="var e=this; setTimeout(function(){return runScript_paste(e.value);}, 4);" value="https://youtu.be/4wheopltqnw" id="url" onkeypress="return runScript(event)">
 	</div>
 
 	</div>
