@@ -1,18 +1,13 @@
-# electron-quick-start
+# Electron-Youtube-to-Mp3-Converter
 
-**Clone and run for a quick way to see Electron in action.**
+![icon.png](img/ytb-icon.png)
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+**Clone and run for a quick way to see Electron-Youtube-to-Mp3-Converter in action.**
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
 
-A basic Electron application needs just these files:
+## Screenshot
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
+![screenshot.JPG](img/screenshot.JPG)
 
 ## To Use
 
@@ -20,7 +15,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter.git
 # Go into the repository
 cd electron-quick-start
 # Install dependencies
@@ -29,12 +24,20 @@ npm install
 npm start
 ```
 
-Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/).
+Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
+
+## Link to final installable windows app
+[Electron Youtube To MP3 Converter](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fih85t8hj629ag5g%2FYtb-mp3.rar%3Fdl%3D0&h=KAQFlnymx&s=1)
 
 ## Other Example Apps
 
 For more example apps, see the
-[list of boilerplates](http://electron.atom.io/community/#boilerplates)
+[list of boilerplates](http://electron.atom.io/apps/)
 created by the awesome electron community.
 
-#### License [CC0 1.0 (Public Domain)](LICENSE.md)
+License
+-------
+
+The MIT License
+
+Copyright (c) 2017 Med Zarroug
