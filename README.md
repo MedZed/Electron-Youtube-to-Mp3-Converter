@@ -2,17 +2,16 @@
 
 ![icon.png](ytb-icon.png)
 
-**Clone and run for a quick way to see Electron-Youtube-to-Mp3-Converter in action.**
-
 
 ##[Youtube mp3 Website](https://medzed.github.io/youtube-mp3-app-website/)
 
+**Clone and run for a quick way to see Electron-Youtube-to-Mp3-Converter in action.**
 
 ## Screenshot
 
 ![screenshot.JPG](img/screenshot.JPG)
 
-## To Use
+## How To Use
 
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
