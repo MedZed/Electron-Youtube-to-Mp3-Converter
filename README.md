@@ -32,7 +32,7 @@ Learn more about Electron and its API in the [documentation](http://electron.ato
 [Electron Youtube To MP3 Converter](https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter/releases/download/1.0.0/Youtube-mp3.exe)
 
 ## Other Example Apps
-
+My other app : News Electron App ([Headlines](https://github.com/MedZed/Electron-Headlines))
 For more example apps, see the
 [list of boilerplates](http://electron.atom.io/apps/)
 created by the awesome electron community.
