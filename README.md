@@ -19,7 +19,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 # Clone this repository
 git clone https://github.com/MedZed/Electron-Youtube-to-Mp3-Converter.git
 # Go into the repository
-cd electron-quick-start
+cd Electron-Youtube-to-Mp3-Converter
 # Install dependencies
 npm install
 # Run the app
